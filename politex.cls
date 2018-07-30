@@ -4,7 +4,6 @@
 %
 % Copyright (c) 2014 Luiz Chamon
 %
-% This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License (LPPL)
 % version 1.3 or (at your option) any later version.
 % The latest version of this license can be found in
@@ -201,7 +200,7 @@
 %%  Defining "POLIheader" pagestyle
 \fancypagestyle{POLIheader}{%
 	\fancyhf{} % clear all header and footer fields
-	\fancyhead[RO,LE]{\small\thepage}
+	\fancyhead[C]{\small\thepage}
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0pt}
 }
@@ -1171,6 +1170,13 @@
   \coorientador[~]{}%
 }
 
+%% TCC
+\newcommand{\estagio}[2]{%
+  \renewcommand{\PoliTipoDocData}{Relatório de estágio}
+  \comentario{Relatório de estágio em engenharia #1 apresentado à Escola
+    Politécnica da Universidade de
+    São Paulo para a disciplina  #2.}%
+}
 
 %%%%%%  DEDICATION  %%%%%%
 
